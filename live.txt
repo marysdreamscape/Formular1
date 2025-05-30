@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Live Tracking</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #000000, #1a1a1a);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .tracking-title {
+      margin: 20px 0;
+      font-size: 2.5rem;
+      text-align: center;
+      color: #ff0000;
+      text-shadow: 2px 2px 10px black;
+    }
+
+    .track {
+      position: relative;
+      width: 90%;
+      height: 300px;
+      background: #444;
+      border: 5px dashed #ccc;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .car {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1.2rem;
+      padding: 5px 10px;
+      background: #222;
+      border-radius: 10px;
+      white-space: nowrap;
+      box-shadow: 0 0 10px red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="tracking-title">🏎️ F1 Live Tracking</h1>
+
+  <div class="track">
+    <div class="car" id="car1">🚗 @SpeedsterMax</div>
+    <div class="car" id="car2">🚙 @TurboLisa</div>
+    <div class="car" id="car3">🏎️ @DriftKingTom</div>
+  </div>
+
+  <script>
+    const cars = [
+      { id: "car1", speed: 0.8, top: 30 },
+      { id: "car2", speed: 0.6, top: 120 },
+      { id: "car3", speed: 0.9, top: 210 }
+    ];
+
+    cars.forEach(car => {
+      const el = document.getElementById(car.id);
+      el.style.top = car.top + "px";
+      let pos = 0;
+
+      setInterval(() => {
+        pos += car.speed;
+        if (pos > window.innerWidth + 100) pos = -200; // restart
+        el.style.left = pos + "px";
+      }, 10);
+    });
+  </script>
+
+</body>
+</html>
+

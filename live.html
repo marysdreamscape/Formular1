@@ -1,0 +1,281 @@
+<body>
+<head>
+<title>Informationen</title>
+</head>
+<header>
+  <a href="Formel1.html" class="header-link">
+    🏁 FORMULA 1 ULTIMATE FANPAGE
+  </a>
+</header>
+
+<section id="hero">
+  <h1>Formula 1 Ultimate Fan Experience</h1>
+  <p>Speed, Passion & Precision – Welcome to the Race!</p>
+</section>
+
+<main>
+  <section>
+    <h2>Über Formel 1</h2>
+    <p>Formel 1, die Königsklasse des Motorsports, fasziniert seit Jahrzehnten Millionen von Fans weltweit. Mit rasanten Geschwindigkeiten, technischen Innovationen und legendären Fahrern ist sie mehr als nur ein Rennen – es ist pure Leidenschaft und Technik auf höchstem Niveau.</p>
+    <p>Die Saison 2025 verspricht erneut spektakuläre Duelle, atemberaubende Überholmanöver und dramatische Boxenstopps. Egal, ob du ein eingefleischter Fan oder ein Neuling bist, hier findest du alle wichtigen Infos und Highlights rund um den Grand Prix Zirkus.</p>
+  </section>
+
+  <section>
+    <h2>Top Teams & Fahrer</h2>
+    <div class="teams">
+      <div class="team-card">
+        <img src="images/Formel12.jpeg" alt="Red Bull Racing" />
+        <h3>Red Bull Racing</h3>
+        <p>Mit Max Verstappen als Topfahrer kämpfen sie um die Weltmeisterschaft. Das Team steht für aggressives Racing und innovative Technik.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Formel13.jpeg" alt="Mercedes AMG Petronas" />
+        <h3>Mercedes AMG Petronas</h3>
+        <p>Das dominante Team der letzten Jahre, bekannt für Zuverlässigkeit und technisches Know-how, angeführt von Lewis Hamilton.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Formel11.jpeg" alt="Ferrari" />
+        <h3>Scuderia Ferrari</h3>
+        <p>Das traditionsreichste Team in der F1-Geschichte, das mit Charles Leclerc und Carlos Sainz um Podestplätze kämpft.</p>
+      </div>
+    </div>
+  </section>
+  
+  <div>
+  <img src="images/f1_.jpg" alt="autoo"/>
+  </div>
+  <br>
+  
+  <p>
+  
+
+  <section id="news">
+    <h2>Latest F1 News</h2>
+    <ul>
+      <li>Verstappen gewinnt dramatischen Monaco GP</li>
+      <li>Hamilton kündigt Rücktritt nach Saison 2025 an</li>
+      <li>Ferrari präsentiert neues Aerodynamik-Paket für Silverstone</li>
+      <li>Nächstes Rennen: 15. Juni 2025 in Kanada</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  © 2025 Formel 1 Fanpage — Made with by Flo
+</footer>
+
+<style>
+  * {
+      margin: 0; padding: 0; box-sizing: border-box;
+	  
+}
+  body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #000000, #1e1e1e, #ff0000);
+      color: white;
+      overflow-x: hidden;
+    }
+
+  header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  text-align: center;
+  user-select: none;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.header-link {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.header-link:hover {
+  border: 2px solid #ff2c2c;
+  box-shadow: 0 0 10px #ff2c2c;
+}
+
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      background: rgba(0, 0, 0, 0.8);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+
+
+  #hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e1e, #000000);
+    border-bottom: 3px solid #ff2c2c;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+    margin: 0 0 10px;
+    font-weight: 900;
+  }
+
+  #hero p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #ff5555;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+#hero {
+  position: relative;
+  background-image: url('images/f1-background.jpg');  /* Pfad zu deinem Bild */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #ff2c2c88;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  z-index: 0;
+}
+
+#hero > * {
+  position: relative;
+  z-index: 1;
+}
+section:not(#hero) {
+  background: rgba(30, 30, 30, 0.85);
+  padding: 40px 30px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff2c2c99;
+  color: #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #ff2c2c;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  section p {
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+
+  .teams {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-card {
+    background: #111;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #ff2c2c88;
+    width: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff2c2ccc;
+  }
+
+  .team-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff2c2c;
+  }
+
+  .team-card h3 {
+    margin: 15px;
+    font-size: 1.6rem;
+    color: #ff2c2c;
+  }
+
+  .team-card p {
+    margin: 0 15px 15px;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #eee;
+  }
+
+  #news ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ff5555;
+  }
+
+  #news ul li {
+    margin-bottom: 12px;
+    border-left: 3px solid #ff2c2c;
+    padding-left: 10px;
+  }
+  
+h2 {text-align: center;
+}
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0,0,0,0.85);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
+  div {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div img {
+  width: 100%; /* passt sich immer an die Breite vom Div an */
+  height: auto;
+  display: block;
+  max-width: 100vw; /* verhindert, dass es breiter als Viewport wird */
+}
+
+
+</style>
+
+</body>
